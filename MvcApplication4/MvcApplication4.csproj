@@ -125,6 +125,7 @@
     </Compile>
     <Compile Include="Models\MvcApplication4Context.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Persistante\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
