@@ -7,14 +7,16 @@ using System.Web;
 
 namespace MvcApplication4.Models
 {
-    public class MvcApplication4Context : DbContext
+    public class Test : DbContext
     {
-        
+
+        public Test() : base("Test") { }
+    
         public DbSet<MvcApplication4.Models.Student> Students { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MvcApplication4Context, Configuration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<Test, Configuration>());
             base.OnModelCreating(modelBuilder);
         }
     }

@@ -8,7 +8,7 @@ using MvcApplication4.Models;
 
 namespace MvcApplication4.Persistante
 {
-    public class Configuration : DbMigrationsConfiguration<MvcApplication4Context> 
+    public class Configuration : DbMigrationsConfiguration<Test> 
     {
         public Configuration()
         {

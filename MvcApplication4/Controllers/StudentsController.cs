@@ -11,7 +11,7 @@ namespace MvcApplication4.Controllers
 {   
     public class StudentsController : Controller
     {
-        private MvcApplication4Context context = new MvcApplication4Context();
+        private Test context = new Test();
 
        
         //
