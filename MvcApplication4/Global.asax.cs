@@ -22,7 +22,7 @@ namespace MvcApplication4
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
-           Database.SetInitializer<MvcApplication4Context>(new Devtalk.EF.CodeFirst.DontDropDbJustCreateTablesIfModelChanged<MvcApplication4Context>());
+           Database.SetInitializer<MvcApplication4Context>(null);
 
 
         }
