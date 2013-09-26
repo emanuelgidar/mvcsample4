@@ -15,6 +15,7 @@ namespace MvcApplication4.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<MvcApplication4Context, Configuration>());
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
